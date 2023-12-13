@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murilo Barranco</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      #logo {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      section {
+        text-align: center;
+        padding: 40px;
+      }
+
+      #contact {
+        margin-top: 20px;
+      }
+
+      .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .social-icons li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .social-icons a {
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+      }
+
+      #whatsapp-btn {
+        background-color: #25d366;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      footer {
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <img src="assets/logo.png" alt="Logo" id="logo" /> -->
+      <h1>Murilo Barranco</h1>
+    </header>
+
+    <section>
+      <h2>Redes Sociais</h2>
+      <ul class="social-icons">
+        <li>
+          <a
+            href="https://www.facebook.com/murilo.barranco.35/"
+            target="_blank"
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/MuriloBarranco" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/murilo_barranco/" target="_blank">
+            Instagram
+          </a>
+        </li>
+      </ul>
+
+      <div id="contact">
+        <h2>Contato</h2>
+        <p>Email: murilo_cesar7@hotmail.com</p>
+        <p>Telefone: (18) 997362352</p>
+        <button id="whatsapp-btn">Enviar mensagem via WhatsApp</button>
+      </div>
+    </section>
+
+    <footer>Desenvolvido por Murilo</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("whatsapp-btn")
+          .addEventListener("click", function () {
+            var phoneNumber = "5518997362352"
+            var message = "Olá, Murilo!"
+            var whatsappUrl =
+              "https://wa.me/" +
+              phoneNumber +
+              "?text=" +
+              encodeURIComponent(message)
+            window.location.href = whatsappUrl
+          })
+      })
+    </script>
+  </body>
+</html>
